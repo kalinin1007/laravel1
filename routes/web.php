@@ -13,6 +13,7 @@
 */
 
 use Illuminate\Http\Request;
+use App\Http\TestDepen;
 
 Route::get('/', 'BlogController@index')->name('home');
 
@@ -27,6 +28,11 @@ Route::get('/greet', function (Request $req) {
 Route::get('/req', function (Request $request) {
 	//$uri = $request->path();
 	 dump($request);
+	});
+        
+Route::get('/dep', function (TestDepen $dep) {
+	//$uri = $request->path();
+	 dump($dep);
 	});
 	
 /*       
