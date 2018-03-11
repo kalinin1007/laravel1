@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\TestDepen;
 
 class PostController extends Controller
 {
@@ -11,7 +12,8 @@ class PostController extends Controller
         return view('tryBlade', ['data' => $data]);
     }
     
-    public function test($slug, $id){
-			return "$slug __\\__ $id";
+    public function test(TestDepen $dep, $slug, $id){
+                        $hello = $dep->hello();
+			return "$slug __\\__ $id __\\__$hello";
 		}
 }
