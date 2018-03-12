@@ -21,6 +21,8 @@ Route::get('/{slug}__{id}', 'BlogController@showPost')->name('showPost');
 
 Route::get('/resolve', 'PostController@resolve');
 
+Route::get('/some', 'PostController@someAction');
+
 
 
 Route::get('/greet', function (Request $req) {

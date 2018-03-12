@@ -13,7 +13,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        //включение файла со вспомогательными функциями
+        require_once __DIR__.'/../library/functions.php';
     }
 
     /**

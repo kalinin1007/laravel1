@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\TestDepen;
+use App\library\classes\SomeClass;
 
 class PostController extends Controller
 {
@@ -20,5 +21,11 @@ class PostController extends Controller
     public function resolve() {
         $foo = resolve('UsefulFunc');
         echo $foo();
+        echo '</br>';
+        echo my_foo1();
+    }
+    
+    public function someAction(SomeClass $s) {
+        echo $s->foo();
     }
 }
