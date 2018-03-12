@@ -21,9 +21,12 @@ class PostController extends Controller
                 
     public function resolve() {
         $foo = resolve('UsefulFunc');
+        $some = resolve('SingleSome');
         echo $foo();
         echo '</br>';
         echo my_foo1();
+        echo '</br>';
+        echo $some->foo();
     }
     
     public function someAction(SomeClass $s, Counter $cou) {

@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+//use App\library\classes\SomeClass;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -26,5 +27,9 @@ class AppServiceProvider extends ServiceProvider
     {
         //
         $this->app->bind('App\library\Interfaces\Counter','App\library\classes\Counter2');
+        
+        $this->app->singleton('SingleSome', function ($app){
+            return new \App\library\classes\SomeClass();
+        });
     }
 }
