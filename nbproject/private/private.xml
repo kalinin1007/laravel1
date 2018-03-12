@@ -4,7 +4,12 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/var/www/host1/config/app.php</file>
-            <file>file:/var/www/host1/app/Providers/UsefulServiceProvider.php</file>
+            <file>file:/var/www/host1/app/library/classes/Counter1.php</file>
+            <file>file:/var/www/host1/app/library/Interfaces/Counter.php</file>
+            <file>file:/var/www/host1/app/library/classes/Counter2.php</file>
+            <file>file:/var/www/host1/app/library/functions.php</file>
+            <file>file:/var/www/host1/app/library/classes/SomeClass.php</file>
+            <file>file:/var/www/host1/app/Providers/AppServiceProvider.php</file>
             <file>file:/var/www/host1/routes/web.php</file>
             <file>file:/var/www/host1/app/Http/Controllers/PostController.php</file>
         </group>

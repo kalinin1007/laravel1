@@ -25,5 +25,6 @@ class AppServiceProvider extends ServiceProvider
     public function register()
     {
         //
+        $this->app->bind('App\library\Interfaces\Counter','App\library\classes\Counter2');
     }
 }

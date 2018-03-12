@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\TestDepen;
 use App\library\classes\SomeClass;
+use App\library\Interfaces\Counter;
 
 class PostController extends Controller
 {
@@ -25,7 +26,10 @@ class PostController extends Controller
         echo my_foo1();
     }
     
-    public function someAction(SomeClass $s) {
+    public function someAction(SomeClass $s, Counter $cou) {
         echo $s->foo();
+        $cou->increment();
+        $cou->increment();
+        echo $cou->getCount();
     }
 }
