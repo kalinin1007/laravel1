@@ -16,4 +16,9 @@ class PostController extends Controller
                         $hello = $dep->hello();
 			return "$slug __\\__ $id __\\__$hello";
 		}
+                
+    public function resolve() {
+        $foo = resolve('UsefulFunc');
+        echo $foo();
+    }
 }

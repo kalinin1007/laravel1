@@ -19,6 +19,8 @@ Route::get('/', 'BlogController@index')->name('home');
 
 Route::get('/{slug}__{id}', 'BlogController@showPost')->name('showPost');
 
+Route::get('/resolve', 'PostController@resolve');
+
 
 
 Route::get('/greet', function (Request $req) {
