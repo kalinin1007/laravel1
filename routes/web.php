@@ -17,7 +17,7 @@ use App\Http\TestDepen;
 
 Route::get('/', 'BlogController@index')->name('home');
 
-Route::get('/{slug}__{id}', 'BlogController@showPost')->name('showPost');
+Route::get('/__{slug}', 'BlogController@showPost')->name('showPost');
 
 Route::get('/resolve', 'PostController@resolve');
 

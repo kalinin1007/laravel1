@@ -6,6 +6,9 @@
 @extends('layouts.base')
 
 @section('footer')
-    <h3>new footer</h3>
-    {{ $data[0]->title}}
+    @foreach ($data as $post)
+      <h2>Это  {{ $post->title }}</h2>
+      <p> {{ $post->text }}</p>
+    @endforeach
+
 @endsection
