@@ -25,6 +25,7 @@ Route::get('/some', 'PostController@someAction');
 
 Route::get('/rel', 'BlogController@rel');
 
+Route::get('/rel-create', 'BlogController@relCreate');
 
 
 Route::get('/greet', function (Request $req) {

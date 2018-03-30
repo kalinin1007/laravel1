@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Post extends Model
 {
     //
+    protected $guarded = [];
     //protected $table = "one";
     public function user()
     {
@@ -18,4 +19,10 @@ class Post extends Model
         
         return $this->hasOne('App\Num');
     }
+    
+    public function tags()
+    {
+        return $this->belongsToMany('App\Tag');
+    }
+    
 }

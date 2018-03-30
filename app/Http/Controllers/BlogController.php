@@ -30,9 +30,22 @@ class BlogController extends Controller
     
     public function rel()
     {
-        $posts = User::where('id','=', 2)->first()->posts;
+        $posts = User::where('id','=', 1)->first()->posts;
         return view('index',['rel_posts'=>$posts]);
         //return "<h2>Showing post id - $id , slug - $slug</h2>";
     }
     
+    public function relCreate()
+    {
+        
+        
+        User::where('id','=', 1)->first()->posts()->create([
+                                    'title'=>'post from code',
+                                    'text'=>'this post was created by laravel',
+                                    'slug'=>'post-code',
+                                    'img'=>'img/5.png',
+                                ]);
+        return 'OK';
+        //return "<h2>Showing post id - $id , slug - $slug</h2>";
+    }
 }
