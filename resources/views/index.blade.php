@@ -1,14 +1,14 @@
 <?php
     //dump($href);
-    dump($data);
+    if(isset($data))
+        dump($data);
+    if(isset($rel_posts)){
+        dump($rel_posts);
+        foreach ($rel_posts as $post) {
+            echo $post->title.'<br>';
+            echo $post->text.'<br>';
+            echo $post->num->hash.'<br>';
+        }
+    }
 ?>
 
-@extends('layouts.base')
-
-@section('footer')
-    @foreach ($data as $post)
-      <h2>Это  {{ $post->title }}</h2>
-      <p> {{ $post->text }}</p>
-    @endforeach
-
-@endsection

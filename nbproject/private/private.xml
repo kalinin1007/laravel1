@@ -5,6 +5,7 @@
         <group>
             <file>file:/var/www/host1/app/Coment.php</file>
             <file>file:/var/www/host1/resources/views/index.blade.php</file>
+            <file>file:/var/www/host1/app/User.php</file>
             <file>file:/var/www/host1/app/Http/Controllers/BlogController.php</file>
             <file>file:/var/www/host1/app/Post.php</file>
             <file>file:/var/www/host1/routes/web.php</file>

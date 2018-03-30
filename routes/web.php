@@ -23,6 +23,8 @@ Route::get('/resolve', 'PostController@resolve');
 
 Route::get('/some', 'PostController@someAction');
 
+Route::get('/rel', 'BlogController@rel');
+
 
 
 Route::get('/greet', function (Request $req) {

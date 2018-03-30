@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Post;
 use App\Coment;
+use App\User;
 
 class BlogController extends Controller
 {
@@ -25,4 +26,13 @@ class BlogController extends Controller
         return view('post',['post'=>$post, 'coments'=>$coments, 'href'=>$href]);
         //return "<h2>Showing post id - $id , slug - $slug</h2>";
     }
+    
+    
+    public function rel()
+    {
+        $posts = User::where('id','=', 2)->first()->posts;
+        return view('index',['rel_posts'=>$posts]);
+        //return "<h2>Showing post id - $id , slug - $slug</h2>";
+    }
+    
 }
