@@ -14,6 +14,7 @@
 
 use Illuminate\Http\Request;
 use App\Http\TestDepen;
+use App\library\classes\ActionRepository;
 
 Route::get('/', 'BlogController@index')->name('home');
 
@@ -41,7 +42,15 @@ Route::get('/dep', function (TestDepen $dep) {
 	//$uri = $request->path();
 	 dump($dep);
 	});
-	
+
+Route::get('/rep', function (ActionRepository $rep) {
+	//$uri = $request->path();
+            dump($rep->getArr());
+	});        
+        
+        
+        
+        
 /*       
 Route::get('greet/{name}', function ($name) {
         $param = 'with name';
