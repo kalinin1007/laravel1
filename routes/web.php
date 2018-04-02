@@ -38,7 +38,10 @@ Route::get('/rep', function (ActionRepository $rep) {
 	});        
         
      
-        
+Route::group(['middleware' => 'auth', 'namespace'=>'Admin','prefix'=>'admin'], function () {
+    Route::get('/', 'AdminController@index');
+    
+  });        
 
         
 /* Very interesting posibility!!! */
