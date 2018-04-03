@@ -20,7 +20,7 @@ Route::get('/', 'BlogController@index')->name('home');
 
 Route::get('/__{slug}', 'BlogController@showPost')->name('showPost');
 
-Route::get('/resolve', 'PostController@resolve');
+Route::get('/resolve', 'PostController@resolve')->middleware('can:post3,App\Post');
 
 Route::get('/some', 'PostController@someAction');
 

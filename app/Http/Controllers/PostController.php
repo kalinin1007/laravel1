@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\TestDepen;
 use App\library\classes\SomeClass;
 use App\library\Interfaces\Counter;
+use App\Post;
 
 class PostController extends Controller
 {
@@ -20,6 +21,7 @@ class PostController extends Controller
 		}
                 
     public function resolve() {
+        //$this->authorize('post3', Post::class);
         $foo = resolve('UsefulFunc');
         $some = resolve('SingleSome');
         echo $foo();

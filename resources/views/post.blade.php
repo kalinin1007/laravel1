@@ -3,6 +3,7 @@
     //dump($post);
     //dump($coments);
     dump($can_comment);
+    //use App\Post;
 ?>
 
 @if(Auth::check() && $can_comment)
@@ -10,7 +11,7 @@
 @endif
 
 
-@can('post3', App\Models\Post::class)
+@can('post3', App\Post::class)
 	<h2> new post3</h2>
 @endcan
 
