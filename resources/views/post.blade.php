@@ -8,6 +8,12 @@
 @if(Auth::check() && $can_comment)
     <h1>Yess you can</h1>
 @endif
+
+
+@can('post3', App\Models\Post::class)
+	<h2> new post3</h2>
+@endcan
+
 @extends('layouts.base')
 
 @section('footer')
