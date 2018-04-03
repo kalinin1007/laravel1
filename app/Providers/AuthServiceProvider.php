@@ -26,5 +26,9 @@ class AuthServiceProvider extends ServiceProvider
         $this->registerPolicies();
 
         //
+        
+        Gate::define('comment', function ($user) {
+            return $user->can_comment == 1;
+       });
     }
 }

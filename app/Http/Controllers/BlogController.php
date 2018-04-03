@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\DB;
 use App\Post;
 use App\Coment;
 use App\User;
+use Illuminate\Support\Facades\Gate;
 
 class BlogController extends Controller
 {
@@ -22,8 +23,13 @@ class BlogController extends Controller
     {
         $href = route('showPost', ['slug'=>'opp-ruth', 'id'=>258]);
         $post = Post::where('slug', '=', $slug)->first();
+        $can_comment = Gate::allows('comment');
         $coments = Coment::where('post_id','=',$post->id)->get();
-        return view('post',['post'=>$post, 'coments'=>$coments, 'href'=>$href]);
+        return view('post',['post'=>$post,
+                            'coments'=>$coments, 
+                             'href'=>$href,
+                             'can_comment'=> $can_comment,
+                            ]);
         //return "<h2>Showing post id - $id , slug - $slug</h2>";
     }
     

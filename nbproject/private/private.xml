@@ -3,15 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/var/www/host1/app/Http/Controllers/Auth/RegisterController.php</file>
             <file>file:/var/www/host1/app/Http/Controllers/BlogController.php</file>
-            <file>file:/var/www/host1/app/Providers/RouteServiceProvider.php</file>
             <file>file:/var/www/host1/app/Post.php</file>
-            <file>file:/var/www/host1/app/Http/Controllers/Auth/LoginController.php</file>
-            <file>file:/var/www/host1/app/Http/Controllers/Admin/AdminController.php</file>
-            <file>file:/var/www/host1/app/Http/Controllers/AjaxController.php</file>
+            <file>file:/var/www/host1/app/Providers/AuthServiceProvider.php</file>
             <file>file:/var/www/host1/routes/web.php</file>
-            <file>file:/var/www/host1/routes/ajax.php</file>
+            <file>file:/var/www/host1/resources/views/post.blade.php</file>
         </group>
     </open-files>
 </project-private>

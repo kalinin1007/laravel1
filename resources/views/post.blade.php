@@ -1,9 +1,13 @@
 <?php
     //dump($href);
-    dump($post);
-    dump($coments);
+    //dump($post);
+    //dump($coments);
+    dump($can_comment);
 ?>
 
+@if(Auth::check() && $can_comment)
+    <h1>Yess you can</h1>
+@endif
 @extends('layouts.base')
 
 @section('footer')
