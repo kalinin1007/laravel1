@@ -5,10 +5,13 @@
         <group>
             <file>file:/var/www/host1/app/Http/Controllers/Auth/RegisterController.php</file>
             <file>file:/var/www/host1/app/Http/Controllers/BlogController.php</file>
+            <file>file:/var/www/host1/app/Providers/RouteServiceProvider.php</file>
             <file>file:/var/www/host1/app/Post.php</file>
             <file>file:/var/www/host1/app/Http/Controllers/Auth/LoginController.php</file>
             <file>file:/var/www/host1/app/Http/Controllers/Admin/AdminController.php</file>
+            <file>file:/var/www/host1/app/Http/Controllers/AjaxController.php</file>
             <file>file:/var/www/host1/routes/web.php</file>
+            <file>file:/var/www/host1/routes/ajax.php</file>
         </group>
     </open-files>
 </project-private>
