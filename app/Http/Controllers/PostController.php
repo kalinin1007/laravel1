@@ -7,6 +7,8 @@ use App\Http\TestDepen;
 use App\library\classes\SomeClass;
 use App\library\Interfaces\Counter;
 use App\Post;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\FeedbackMail;
 
 class PostController extends Controller
 {
@@ -36,5 +38,11 @@ class PostController extends Controller
         $cou->increment();
         $cou->increment();
         echo $cou->getCount();
+    }
+    
+    public function mail() {
+        
+        Mail::to('kalinin1007@gmail.com')->send(new FeedbackMail('my awesome text'));
+        
     }
 }

@@ -28,6 +28,8 @@ Route::get('/rel', 'BlogController@rel');
 
 Route::get('/rel-create', 'BlogController@relCreate');
 
+Route::get('/mail', 'PostController@mail');
+
 
 
 Route::get('/rep', function (ActionRepository $rep) {

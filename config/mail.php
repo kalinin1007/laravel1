@@ -56,7 +56,7 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
+        'address' => env('MAIL_FROM_ADDRESS', 'nk789@yandex.ru'),
         'name' => env('MAIL_FROM_NAME', 'Example'),
     ],
 
@@ -119,5 +119,7 @@ return [
             resource_path('views/vendor/mail'),
         ],
     ],
+    
+    'pretend' => false,
 
 ];
